@@ -2,14 +2,14 @@
     "executionRoleArn": "arn:aws:iam::641710438856:role/ecsTaskExecutionRole", 
     "containerDefinitions": [ 
         { 
-            "name": "sample-website", 
-            "image": "641710438856.dkr.ecr.us-west-2.amazonaws.com/vendor-builds:latest", 
+            "name": "inhouse-builds", 
+            "image": "641710438856.dkr.ecr.us-west-2.amazonaws.com/inhouse-builds:latest", 
             "essential": true, 
             "portMappings": [ 
                 { 
-                    "hostPort": 5000, 
+                    "hostPort": 80, 
                     "protocol": "tcp", 
-                    "containerPort": 5000 
+                    "containerPort": 80 
                 } 
             ] 
         } 
@@ -20,5 +20,5 @@
     "networkMode": "awsvpc", 
     "cpu": "256", 
     "memory": "512", 
-    "family": "ecs-demo" 
+    "family": "inhouse-builds" 
 } 
