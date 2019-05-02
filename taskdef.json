@@ -3,7 +3,7 @@
     "containerDefinitions": [ 
         { 
             "name": "inhouse-builds", 
-            "image": "641710438856.dkr.ecr.us-west-2.amazonaws.com/inhouse-builds:latest", 
+            "image": "<IMAGE1_NAME", 
             "essential": true, 
             "portMappings": [ 
                 { 
