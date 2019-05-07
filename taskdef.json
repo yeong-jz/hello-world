@@ -3,7 +3,7 @@
     "containerDefinitions": [ 
         { 
             "name": "sample-website", 
-            "image": "<IMAGE1_NAME>", 
+            "image": "641710438856.dkr.ecr.us-west-2.amazonaws.com/inhouse-test:latest", 
             "essential": true, 
             "portMappings": [ 
                 { 
